@@ -24,7 +24,7 @@ public class Monjo {
 		return pedres;
 	}
 	
-	public int getPedra(){
+	public int getPedres(){
 		return pedres;
 	}
 	

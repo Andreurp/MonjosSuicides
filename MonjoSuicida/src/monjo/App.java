@@ -21,7 +21,7 @@ public class App {
 			joc.afegirMonjo(frara, frara.getDiners());
 		}
 		
-		joc.monjoEnvarca(preuBitllet);
-		joc.jugar();
+		//joc.monjoEnvarca(preuBitllet);
+		//joc.jugar();
 	}
 }
