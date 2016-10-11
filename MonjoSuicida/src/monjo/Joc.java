@@ -9,9 +9,10 @@ public class Joc {
 	
 	private int dau;
 	private Random r = new Random();
+	private int totalDinersPot = 0;
+	private int monjosAbort = 0;
 	
 	public Joc() {
-		int totalDinersPot = sumaDiners();
 		tirarDau();
 	}
 
@@ -20,17 +21,22 @@ public class Joc {
 		return dau;
 	}
 
-	public int getDau() {
-		return dau;
-	}
-
-	public void afegirMonjo(Monjo frara) {
+	public void afegirMonjo(Monjo frara, int i) {
+		totalDinersPot = totalDinersPot + i;
 		monjos.add(frara);
 	}
-	public int sumaDiners(){
-		for(int i=0; i<monjos.size(); i++){
-			
-		}
+
+	public int monjoEnvarca(int preuBitllet) {
+		int totalPreu;
+		
+		totalPreu = preuBitllet * monjos.size();
+		monjosAbort = totalPreu / monjos.size();
+		return monjosAbort;
+		
 	}
 	
+	public void jugar(){
+		System.out.println(dau);
+		System.out.println(monjos.size());
+	}
 }
