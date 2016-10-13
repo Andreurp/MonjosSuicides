@@ -19,9 +19,8 @@ public class Monjo {
 		return diners;
 	}
 	
-	public int agafarPedres(){
+	public void agafarPedres(){
 		pedres = 1+r.nextInt(5);
-		return pedres;
 	}
 	
 	public int getPedres(){
